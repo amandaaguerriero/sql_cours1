@@ -1,4 +1,4 @@
-# Cours 0
+# [Cours 1](https://cs50.harvard.edu/sql/2024/notes/0/)
 
 - [Introduction](#introduction)
 - [Qu'est-ce qu'une base de données ?](#quest-ce-quune-base-de-données)
@@ -20,7 +20,7 @@
 - Les bases de données (et SQL) sont des outils qui peuvent être utilisés pour interagir avec, stocker et gérer des informations. Bien que les outils que nous utilisons dans ce cours soient nouveaux, une base de données est une idée ancienne.
 - Regardez ce diagramme vieux de quelques milliers d'années. Il a des lignes et des colonnes, et semble contenir des indemnités pour les travailleurs d'un temple. On pourrait appeler ce diagramme un tableau, ou même une feuille de calcul.
 
-[Tableau avec les indemnités des travailleurs du temple]
+![Tableau avec les indemnités des travailleurs du temple](https://cs50.harvard.edu/sql/2024/notes/0/images/templeworkerstipends.jpg)
 
 - Sur la base de ce que nous voyons dans le diagramme ci-dessus, nous pouvons conclure que :
     - Un tableau stocke un ensemble d'informations (ici, les indemnités des travailleurs).
@@ -28,11 +28,11 @@
     - Chaque colonne a un attribut de cet élément (ici, l'indemnité pour un mois particulier).
 - Considérons maintenant un contexte moderne. Disons que vous êtes bibliothécaire et que vous devez organiser des informations sur les titres de livres et les auteurs dans ce diagramme.
 
-["Titres de livres et auteurs - Non organisés"]
+!["Titres de livres et auteurs - Non organisés"](https://cs50.harvard.edu/sql/2024/notes/0/images/books.jpg)
 
 - Une façon d'organiser les informations serait d'avoir chaque titre de livre suivi de son auteur, comme ci-dessous.
 
-["Tableau avec les titres de livres suivis de l'auteur"]
+!["Tableau avec les titres de livres suivis de l'auteur"](https://cs50.harvard.edu/sql/2024/notes/0/images/bookstable.jpg)
 
     - Notez que chaque livre est maintenant une ligne dans ce tableau.
     - Chaque ligne a deux colonnes — chacune un attribut différent du livre (titre du livre et auteur).
