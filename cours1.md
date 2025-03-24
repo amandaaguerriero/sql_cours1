@@ -44,11 +44,11 @@
 
 ## Qu'est-ce qu'une base de données ?
 
-- Une base de données est un moyen d'organiser des données de manière à pouvoir effectuer quatre opérations sur celles-ci :
-    - créer
-    - lire
-    - mettre à jour
-    - supprimer
+- **CRUD**: Une base de données est un moyen d'organiser des données de manière à pouvoir effectuer quatre opérations sur celles-ci :
+    - CREATE (créer)
+    - READ (lire)
+    - UPDATE (mettre à jour)
+    - DELETE (supprimer)
 - Un système de gestion de base de données (DBMS) est un moyen d'interagir avec une base de données en utilisant une interface graphique ou un langage textuel.
 - Exemples de DBMS : MySQL, Oracle, PostgreSQL, SQLite, Microsoft Access, MongoDB, etc.
 - Le choix d'un DBMS dépend de facteurs tels que :
@@ -75,12 +75,45 @@
 
 ## Conseils pour le terminal
 
-Voici quelques conseils utiles pour écrire du code SQL dans le terminal.
+Voici quelques commandes essentielles pour naviguer dans le terminal et manipuler SQLite efficacement.
 
-- Pour effacer l'écran du terminal, appuyez sur Ctrl + L.
-- Pour obtenir la ou les instructions précédemment exécutées dans le terminal, appuyez sur la touche fléchée vers le haut.
-- Si votre requête SQL est trop longue et s'enroule autour du terminal, vous pouvez appuyer sur Entrée et continuer à écrire la requête sur la ligne suivante.
-- Pour quitter une base de données ou l'environnement SQLite, utilisez `.quit`.
+### Commandes de base du terminal
+
+* `ls` - Affiche le contenu du répertoire actuel
+* `cd dossier` - Change de répertoire vers "dossier"
+* `cd ..` - Remonte d'un niveau dans l'arborescence
+* `mkdir nom_dossier` - Crée un nouveau dossier
+* `touch nom_fichier` - Crée un nouveau fichier vide
+* `rm nom_fichier` - Supprime un fichier
+* `rm -r nom_dossier` - Supprime un dossier et son contenu
+* `pwd` - Affiche le chemin du répertoire actuel
+* `cat nom_fichier` - Affiche le contenu d'un fichier
+
+### Astuces générales du terminal
+
+* Pour effacer l'écran du terminal, appuyez sur `Ctrl + L`
+* Pour accéder aux commandes précédemment exécutées, utilisez la touche `↑` (flèche vers le haut)
+* Pour interrompre une commande en cours d'exécution, appuyez sur `Ctrl + C`
+* Pour compléter automatiquement un nom de fichier ou de dossier, utilisez la touche `Tab`
+
+### Commandes spécifiques à SQLite
+
+* `.quit` - Quitter l'environnement SQLite
+* `.help` - Afficher l'aide et la liste des commandes disponibles
+* `.tables` - Afficher toutes les tables dans la base de données
+* `.schema [nom_table]` - Afficher la structure d'une table
+* `.mode column` - Afficher les résultats en colonnes (plus lisible)
+* `.headers on` - Afficher les noms des colonnes dans les résultats
+* `.mode csv` - Afficher les résultats au format CSV
+* `.mode box` - Afficher les résultats dans des cadres (très lisible)
+* `.open nom_fichier.db` - Ouvrir une base de données
+
+### Conseils pour les requêtes SQL
+
+* Si votre requête SQL est trop longue, vous pouvez appuyer sur `Entrée` et continuer sur la ligne suivante
+* N'oubliez pas de terminer vos requêtes SQL par un point-virgule `;`
+* Pour exécuter un fichier SQL, utilisez `.read nom_fichier.sql`
+* Pour enregistrer les résultats d'une requête dans un fichier, utilisez `.output nom_fichier.txt`
 
 ## `SELECT`
 
